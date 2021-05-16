@@ -1,0 +1,159 @@
+/*mobile first*/
+
+/*reset y font*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'VT323', monospace;
+
+    
+}
+
+/*colores*/
+.yellow-neon {
+    color: #FFFFFF;
+    text-shadow: 0 0 8px #d9ff00, 0 0 2px #d9ff00, 0 0 10px #d9ff00, 0 0 6px #d9ff00, 0 0 20px #d9ff00, 0 0 20px #d9ff00;
+}
+
+.white-neon {
+    color: rgb(50, 255, 31);
+    text-shadow: 0 0 8px #ffffff, 0 0 2px #ffffff, 0 0 10px #ffffff, 0 0 6px #d9ff00, 0 0 20px ;
+}
+
+
+/*INDEX*/
+
+body {
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;    
+    align-items: center;
+    width: 100%;
+    height: 20%;
+}
+
+nav #burger-menu-toggler{
+    background-color: transparent;
+    color: rgba(0,213,21,255);
+    margin-right: 15%;    
+}
+
+body nav #close-mobile-menu {
+    display: none;
+}
+
+body nav #open-mobile-menu {
+    display: block;
+}
+ #menu{
+    display: none;
+}
+
+main{
+    height: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding: 0 10%;
+}
+
+main .presentation {
+
+    color: rgba(0,213,21,255);
+    padding: 20%;
+
+}
+main .presentation  h1{     
+    margin-bottom: 10px;
+    font-size: 2.2em;
+}
+
+main .presentation p {
+    font-size: 1.2em;
+}
+
+
+
+
+/*FOOTER*/
+
+footer {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/*COMO NO DEFORMAR LA IMAGEN*/
+
+figure {
+    display: flex;
+    justify-content: center;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+img {
+    max-width: 50%;
+    max-height: 50%;
+    background-color: transparent;
+}
+
+/*MENU MOBILE ACTIVATE*/
+
+body.mobile-menu-active #menu {       
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+}
+
+body.mobile-menu-active main .presentation{
+    display: none;
+}
+
+body.mobile-menu-active #close-mobile-menu{
+    display: block;
+}
+
+
+body.mobile-menu-active  #open-mobile-menu{
+    display: none;
+}
+
+body.mobile-menu-active li {
+    background-color: rgb(50, 255, 31);
+    font-size: 2.3em;
+    padding: 4%;
+    margin: 2% 3%;    
+}
+
+body.mobile-menu-active a {
+    color: white;
+}
+
+body.mobile-menu-active a:hover{
+    font-size: 1.2em;
+
+}
+
+
+
