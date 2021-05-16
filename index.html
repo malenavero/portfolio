@@ -10,7 +10,6 @@
       href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
       rel="stylesheet"
     />
-
     <script
       src="https://kit.fontawesome.com/cd5ed65085.js"
       crossorigin="anonymous"
@@ -21,33 +20,78 @@
   <body >
     <nav>
       <button id="burger-menu-toggler">
-        <i class="fas fa-hamburger fa-3x white-neon" id="open-mobile-menu"></i>
+        <i class="fas fa-hamburger fa-3x " id="open-mobile-menu"></i>
         <i class="fas fa-times fa-3x" id="close-mobile-menu"></i>
       </button>
+
+      <ul id="menu">
+        <li class="menu-item active yellow-neon"><a href="#home">HOME</a></li>
+        <li class="menu-item yellow-neon"><a href="#about">ABOUT ME</a></li>
+        <li class="menu-item yellow-neon"><a href="#projects">PROJECTS</a></li>
+        <li class="menu-item yellow-neon"><a href="#cv">CV</a></li>
+        <li class="menu-item yellow-neon"><a href="#contact">CONTACT</a></li>
+      </ul>
     </nav>
 
     <main>
-      <article class="presentation">
-        <h1>Bienvenides a mi portfolio...</h1>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
-          maiores distinctio quod provident hic magni doloribus
-        </p>
+      <article class="page colorPage1" id="home">
+        <section class="presentation">
+          <h1>Bienvenides a mi portfolio...</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
+            maiores distinctio quod provident hic magni doloribus
+          </p>
+        </section>
+
+        <figure>
+          <img src="./img/avatar3.png" alt="avatar" />
+        </figure>
       </article>
 
-      <ul id="menu">
-        <li class="menu-item yellow-neon"><a href="">HOME</a></li>
-        <li class="menu-item yellow-neon"><a href="">ABOUT ME</a></li>
-        <li class="menu-item yellow-neon"><a href="">PROYECTS</a></li>
-        <li class="menu-item yellow-neon"><a href="">CV</a></li>
-        <li class="menu-item yellow-neon"><a href="">CONTACT</a></li>
-      </ul>
+      <article class="page colorPage2" id="about">
+        <section class="presentation">
+          <h1>ABOUT ME</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
+            maiores distinctio quod provident hic magni doloribus
+          </p>
+        </section>
+      </article>
+
+      <article class="page colorPage1" id="projects">
+        <section class="presentation" >
+          <h1>PROJECTS</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
+            maiores distinctio quod provident hic magni doloribus
+          </p>
+        </section>
+      </article>
+
+      <article class="page colorPage2" id="cv">
+        <section class="presentation">
+          <h1>CV</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
+            maiores distinctio quod provident hic magni doloribus
+          </p>
+        </section>
+      </article>
+
+      <article class="page colorPage1" id="contact">
+        <section class="presentation">
+          <h1>CONTACT</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
+            maiores distinctio quod provident hic magni doloribus
+          </p>
+        </section>
+      </article>
     </main>
 
     <footer>
-      <figure>
-        <img src="./img/avatar3.png" alt="avatar" />
-      </figure>
+      <a href="https://www.linkedin.com/in/malena-vero/"><i class="fab fa-linkedin icon"></i></a>
+      <a href="https://www.github.com/malenavero"><i class="fab fa-github-square icon"></i></a>
     </footer>
   </body>
 </html>

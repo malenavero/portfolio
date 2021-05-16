@@ -9,16 +9,24 @@ window.addEventListener('load', function(){
             document.body.classList.toggle('mobile-menu-active');
         });
     
-        /*saco la clase cuando elijo un elemento del menu*/
-        menuItems.forEach(function(menuItem) {
-            document.body.classList.remove('mobile-menu-active')
+        
+        menuItems.forEach(function(menuItem) {            
+            menuItem.addEventListener('click', function(){
+                /*saco la clase cuando elijo un elemento del menu*/
+                document.body.classList.remove('mobile-menu-active');          
+
+                /*cuando clickeo un item este queda formato activado*/
+                let currentItem = document.querySelector('.active');
+                    currentItem.classList.remove('active');
+                    this.classList.add('active');
+            });
         });
-    
-        /*agrego la clase active para dar estilo a los items del menu clickeados*/
-    
-    }
-    
+  
+    };
     navMobile();
 });
+
+
+
 
 

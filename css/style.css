@@ -9,9 +9,7 @@
     text-decoration: none;
     border: none;
     outline: none;
-    font-family: 'VT323', monospace;
-
-    
+    font-family: 'VT323', monospace;    
 }
 
 /*colores*/
@@ -26,25 +24,36 @@
 }
 
 
-/*INDEX*/
-
 body {
-    background-color: rgb(0, 0, 0);
+
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
+/*NAV*/
+
 nav{
+    position: fixed;
+    opacity: 100%;
     display: flex;
     justify-content: flex-end;    
     align-items: center;
+    height: 12%;
     width: 100%;
-    height: 20%;
+    background-color: black;
+    z-index: 1;
+    top: 0;
 }
 
 nav #burger-menu-toggler{
     background-color: transparent;
     color: rgba(0,213,21,255);
-    margin-right: 15%;    
+    margin-right: 10%; 
+    font-size: 0.8em;  
+    z-index: 2; 
 }
 
 body nav #close-mobile-menu {
@@ -54,26 +63,38 @@ body nav #close-mobile-menu {
 body nav #open-mobile-menu {
     display: block;
 }
- #menu{
+
+#menu{
     display: none;
 }
 
-main{
-    height: 50%;
+
+/*MAIN*/
+main {
+    position: relative;
+
+}
+main .page{
+    height: 100vh;
+    bottom: 0;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
-    padding: 0 10%;
+    align-items:center;  
 }
 
+main .colorPage1{
+    background-color: rgb(248, 248, 248);
+}
+main .colorPage2 {
+    background-color: rgb(0, 0, 0) ;
+}
 main .presentation {
-
     color: rgba(0,213,21,255);
     padding: 20%;
-
 }
+
 main .presentation  h1{     
     margin-bottom: 10px;
     font-size: 2.2em;
@@ -84,19 +105,6 @@ main .presentation p {
 }
 
 
-
-
-/*FOOTER*/
-
-footer {
-    height: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-/*COMO NO DEFORMAR LA IMAGEN*/
-
 figure {
     display: flex;
     justify-content: center;
@@ -105,15 +113,55 @@ figure {
 }
 
 img {
-    max-width: 50%;
-    max-height: 50%;
+    width: 60%;
     background-color: transparent;
 }
 
+/*FOOTER*/
+footer {
+    width: 100%;
+    bottom: 0;
+    height: 60px;
+    position: fixed;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 3;
+    }
+
+footer .icon {
+    color: rgba(0,213,21,255);
+    font-size: 1.5em;
+    
+
+}
+
+/*COMO NO DEFORMAR LA IMAGEN*/
+
+
+
 /*MENU MOBILE ACTIVATE*/
 
+body.mobile-menu-active {
+    overflow: hidden;
+}
+
+body.mobile-menu-active main {
+   opacity: 25%;   
+}
+
+
+body.mobile-menu-active #close-mobile-menu{
+    display: block;
+}
+
+body.mobile-menu-active  #open-mobile-menu{
+    display: none;
+}
+
 body.mobile-menu-active #menu {       
-    position: relative;
+    position: absolute;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -122,25 +170,13 @@ body.mobile-menu-active #menu {
     padding: 20%;
     top: 0;
     left: 0;
-    z-index: 1;
-    
+    z-index: 1;    
 }
 
-body.mobile-menu-active main .presentation{
-    display: none;
-}
-
-body.mobile-menu-active #close-mobile-menu{
-    display: block;
-}
-
-
-body.mobile-menu-active  #open-mobile-menu{
-    display: none;
-}
 
 body.mobile-menu-active li {
     background-color: rgb(50, 255, 31);
+    text-align: center;
     font-size: 2.3em;
     padding: 4%;
     margin: 2% 3%;    
