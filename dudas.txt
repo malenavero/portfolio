@@ -3,6 +3,8 @@
 2- se deforma la imagen
 
 3- como hago para que el tamanio de page sea compactado entre nav y footer (si bajo la opacidad de nav veo que abarca atras de el)
+
+
 esto al body
 position: fixed;
     top: 12vh;
