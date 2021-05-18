@@ -25,7 +25,8 @@
 
 
 body {
-
+    padding-top: 80px;
+    padding-bottom: 60px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -37,11 +38,11 @@ body {
 
 nav{
     position: fixed;
-    opacity: 80%;
+
     display: flex;
     justify-content: flex-end;    
     align-items: center;
-    height: 12%;
+    height: 80px;
     width: 100%;
     background-color: black;
     z-index: 1;
@@ -72,10 +73,11 @@ body nav #open-mobile-menu {
 /*MAIN*/
 main {
     position: relative;
+    overflow: auto;
 
 }
 main .page{
-    height: 100vh;
+    height: 100%;
     bottom: 0;
     text-align: center;
     display: flex;
