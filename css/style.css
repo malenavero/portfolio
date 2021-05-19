@@ -9,7 +9,7 @@
     text-decoration: none;
     border: none;
     outline: none;
-    font-family: 'VT323', monospace;
+    font-family: 'VT323', monospace;    
 }
 
 /*colores*/
@@ -20,14 +20,14 @@
 
 .white-neon {
     color: rgb(21, 250, 0);
-    text-shadow: 0 0 8px #ffffff, 0 0 2px #ffffff, 0 0 10px #ffffff, 0 0 6px #ffffff, 0 0 20px;
+    text-shadow: 0 0 8px #ffffff, 0 0 2px #ffffff, 0 0 10px #ffffff, 0 0 6px #ffffff, 0 0 20px ;
 }
 
 
 /*CON MENU CERRADO*/
 
 body {
-    padding-top: 70px;
+    padding-top: 80px;
     padding-bottom: 60px;
     height: 100vh;
     display: flex;
@@ -38,25 +38,25 @@ body {
 
 /*NAV*/
 
-nav {
+nav{
     position: fixed;
 
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end;    
     align-items: center;
-    height: 70px;
+    height: 80px;
     width: 100%;
     background-color: black;
     z-index: 1;
     top: 0;
 }
 
-nav #burger-menu-toggler {
+nav #burger-menu-toggler{
     background-color: transparent;
-    color: rgba(0, 213, 21, 255);
-    margin-right: 10%;
-    font-size: 0.8em;
-    z-index: 2;
+    color: rgba(0,213,21,255);
+    margin-right: 10%; 
+    font-size: 0.8em;  
+    z-index: 2; 
 }
 
 body nav #close-mobile-menu {
@@ -67,7 +67,7 @@ body nav #open-mobile-menu {
     display: block;
 }
 
-#menu {
+#menu{
     display: none;
 }
 
@@ -78,32 +78,31 @@ main {
     overflow: auto;
 
 }
-
-main .page {
+main .page{
     height: 100%;
     bottom: 0;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items:center;  
 }
 
-main .colorPage1 {
+main .colorPage1{
     background-color: rgb(248, 248, 248);
 }
-
 main .colorPage2 {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0) ;
 }
-
 main .title {
-    color: rgba(0, 213, 21, 255);
-    padding: 0 10%;
+    color: rgba(0,213,21,255);
+    padding: 0 10%;;
+    
 }
 
-main .title h1 {
-    font-size: 2.4em;
+main .title  h1{     
+    
+    font-size: 2.2em;
     letter-spacing: 2px;
     display: inline-block;
     transform: scaleY(0.7);
@@ -119,45 +118,12 @@ main .title p {
 
 main #home .title h1 {
     font-size: 6em;
+
 }
 
 main #home {
-    justify-content: space-around;
+    justify-content:space-around;
 }
-
-figure {
-    display: flex;
-    justify-content: center;
-    max-height: 100%;
-    max-width: 100%;
-}
-
-img {
-    width: 70%;
-    background-color: transparent;
-}
-
-/*ABOUT*/
-
-
-/*PROJECTS*/
-
-/*CV*/
-/* 
-main #cv {
-    justify-content: space-around;
-}
- */
-main #cv figure {
-    width: 100%;
-}
-
-main #cv figure img {
-    width: 80%;
-}
-
-/*CONTACT*/
-
 
 figure {
     display: flex;
@@ -170,6 +136,54 @@ img {
     width: 60%;
     background-color: transparent;
 }
+
+/*ABOUT*/
+
+/*PROJECTS*/
+
+/*CV*/
+main #cv figure img {
+    width: 80%;
+}
+
+/*CONTACT*/
+main #contact .body-page{
+    text-align: left;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    font-size: 1.5em;   
+
+}
+
+main #contact form {
+    display: flex;
+    flex-direction: column; 
+    margin-top: 10%;
+}
+
+main #contact form input{
+    background-color: black;
+    color: chartreuse;
+    padding: 2%;
+    height: 15%;
+}
+main #contact form input::placeholder{
+    color: chartreuse;
+    font-size: 1em;
+}
+
+main #contact form textarea{
+    background-color: black;
+    margin: 2% 0;
+}
+main #contact form textarea{
+    background-color: black;
+    margin: 2% 0;
+}
+
+
 
 
 
@@ -185,11 +199,11 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     z-index: 3;
-}
+    }
 
 footer .icon {
-    color: rgba(0, 213, 21, 255);
-    font-size: 1.5em;
+    color: rgba(0,213,21,255);
+    font-size: 1.5em;   
 
 }
 
@@ -203,19 +217,19 @@ body.mobile-menu-active {
 }
 
 body.mobile-menu-active main {
-    opacity: 25%;
+   opacity: 25%;   
 }
 
 
-body.mobile-menu-active #close-mobile-menu {
+body.mobile-menu-active #close-mobile-menu{
     display: block;
 }
 
-body.mobile-menu-active #open-mobile-menu {
+body.mobile-menu-active  #open-mobile-menu{
     display: none;
 }
 
-body.mobile-menu-active #menu {
+body.mobile-menu-active #menu {       
     position: absolute;
     width: 100vw;
     height: 100vh;
@@ -225,23 +239,26 @@ body.mobile-menu-active #menu {
     padding: 20%;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 1;    
 }
 
 
-body.mobile-menu-active li {
+body.mobile-menu-active nav li {
     background-color: rgb(50, 255, 31);
     text-align: center;
     font-size: 2.3em;
     padding: 4%;
-    margin: 2% 3%;
+    margin: 2% 3%;    
 }
 
 body.mobile-menu-active a {
     color: white;
 }
 
-body.mobile-menu-active a:hover {
+body.mobile-menu-active a:hover{
     font-size: 1.2em;
 
 }
+
+
+
