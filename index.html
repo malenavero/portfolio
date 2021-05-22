@@ -87,39 +87,49 @@
             <li><i class="fas fa-envelope-square icon"></i>  malena.vero0@gmail.com</li>
             <li><i class="fab fa-linkedin icon"></i>  /malena-vero</li>
           </ul>
-          
-          <form action="" class="contact-form">
-            <label for="name">Name:</label>
-            <input 
-              type="text"
-              id="name"
-              placeholder="What should i call you?"
-              required>
-
-            <label for="pronouns">Pronouns:</label>
-            <input
-              type="text"
-              id="pronouns"
-              placeholder="He/She/They/Others">
-            
-            <label for="email">E-Mail:</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="example@mail.com"
-              required
-            >
-            <label for="message">Message: </label>
-            <textarea
-              name="message"
-              id="message"
-              placeholder="..."
-              cols="30"
-              rows="10"
-              ></textarea>            
+          <form>
+            <fieldset>
+<!--               <legend>Contact</legend> -->
+              <p class="field">
+                <label for="name">Name:</label>
+                <input 
+                  type="text"
+                  id="name"
+                  placeholder="What should i call you?"
+                  required>
+              </p>
+              <p class="field">
+                <label for="pronouns">Pronouns:</label>
+                <input
+                  type="text"
+                  id="pronouns"
+                  placeholder="He/She/They/Others">
+              </p>
+              <p class="field">
+                <label for="email">E-Mail:</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="example@mail.com"
+                  required>
+              </p>
+              <p class="field">
+                <label for="message">Message: </label>
+                <textarea
+                name="message"
+                id="message"
+                placeholder="..."
+                cols="30"
+                rows="4"
+                ></textarea> 
+              </p>
+              <p class="field btn">
+                <input type="submit" value="Send">
+              </p>              
+              
+            </fieldset>
           </form>
         </section>  
-
       </article>
     </main>
 

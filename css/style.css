@@ -26,13 +26,13 @@
 /*CON MENU CERRADO*/
 
 body {
-    padding-top: 80px;
-    padding-bottom: 60px;
+    padding: 15% 0;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    background-color: rgb(245, 245, 245);
 }
 
 /*NAV*/
@@ -79,16 +79,17 @@ main {
 }
 main .page{
     height: 100%;
-    bottom: 0;
+    width: 100%;
+    margin: 5% 0;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;  
 }
-main .colorPage1{
-    background-color: rgb(248, 248, 248);
-}
+/* main .colorPage1{
+    background-color: rgb(226, 226, 226);
+} */
 main .colorPage2 {
     background-color: rgb(0, 0, 0) ;
 }
@@ -139,44 +140,71 @@ main #cv figure img {
 
 /*CONTACT*/
 
-main #contact .title{
-    margin-top: 8%;
-}
-
-main #contact .body-page{
-    text-align: left;
-    width: 80%;
-    height: 100vh;
+#contact {
     display: flex;
     flex-direction: column;
-    justify-content: space-around; 
-    font-size: 1.5em;   
+    justify-content: center; 
+    align-items: center;
 }
 
-main #contact form {
+main #contact .title{
+    margin-bottom:8%;
+}
+
+#contact .body-page{
+    text-align: left;
+    height: 70%;
+    width: 80%;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    justify-content: space-around;
+   
 }
 
-main #contact form input{
-    background-color: black;
-    color: chartreuse;
+#contact .contact-links li{
+    margin-bottom:3%;
+    font-size: 1.1em;
+    }
+
+#contact .field{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3em;
+    padding: 2% 0;
+
+}
+
+#contact .field input {
+    font-size: 0.8em;
+    height: 30px;
     padding: 2%;
-    height: 15%;
+    background-color: black;
+    color: rgba(0,213,21,255);
 }
-main #contact ::placeholder{
-    color: chartreuse;
+
+#contact .field input::placeholder{
+    color: rgba(0,213,21,255);
+}
+
+#contact .field textarea{
+    padding: 3%;
+    font-size: 1em;
+}
+
+#contact .btn{
+    display: flex;
+    align-items: center;
+}
+
+#contact .btn input{
+    background-color: black;
+    height: 30%;
+    width: 40%;
+    color: rgba(0,213,21,255);
     font-size: 1.5em;
-    background-color: black;
+    border: 0.5px rgba(0,213,21,255) solid;
+    border-radius: 15px;
 }
-
-main #contact form textarea{
-    background-color: black;
-    padding: 3% 2%;
-}
-
-
-
 
 
 
