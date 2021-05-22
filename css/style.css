@@ -23,7 +23,6 @@
     text-shadow: 0 0 8px #ffffff, 0 0 2px #ffffff, 0 0 10px #ffffff, 0 0 6px #ffffff, 0 0 20px ;
 }
 
-
 /*CON MENU CERRADO*/
 
 body {
@@ -71,8 +70,8 @@ body nav #open-mobile-menu {
     display: none;
 }
 
-
 /*MAIN */
+
 main {
     position: relative;
     overflow: auto;
@@ -87,7 +86,6 @@ main .page{
     justify-content: center;
     align-items:center;  
 }
-
 main .colorPage1{
     background-color: rgb(248, 248, 248);
 }
@@ -99,39 +97,33 @@ main .title {
     padding: 0 10%;;
     
 }
-
 main .title  h1{     
     
-    font-size: 2.2em;
+    font-size: 3em;
     letter-spacing: 2px;
     display: inline-block;
     transform: scaleY(0.7);
     transform-Origin: 0 0;
+    margin-top: 70px;
 }
-
 main .title p {
     font-size: 1.2em;
 }
-
 
 /*HOME*/
 
 main #home .title h1 {
     font-size: 6em;
-
 }
-
 main #home {
     justify-content:space-around;
 }
-
 figure {
     display: flex;
     justify-content: center;
     max-height: 100%;
     max-width: 100%;
 }
-
 img {
     width: 60%;
     background-color: transparent;
@@ -147,20 +139,21 @@ main #cv figure img {
 }
 
 /*CONTACT*/
+
 main #contact .body-page{
     text-align: left;
     width: 80%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
+    margin: 7% 0;
     font-size: 1.5em;   
-
 }
 
 main #contact form {
     display: flex;
     flex-direction: column; 
-    margin-top: 10%;
 }
 
 main #contact form input{
@@ -169,19 +162,17 @@ main #contact form input{
     padding: 2%;
     height: 15%;
 }
-main #contact form input::placeholder{
+main #contact ::placeholder{
     color: chartreuse;
-    font-size: 1em;
+    font-size: 1.5em;
+    background-color: black;
 }
 
 main #contact form textarea{
     background-color: black;
-    margin: 2% 0;
+    padding: 3% 2%;
 }
-main #contact form textarea{
-    background-color: black;
-    margin: 2% 0;
-}
+
 
 
 
