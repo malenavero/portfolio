@@ -90,7 +90,6 @@ nav #menu-desktop li a:hover{
 
 main {
     position: absolute;
-    overflow:scroll;
     height: 100vh;
 }
 
@@ -181,7 +180,7 @@ main .title p {
 }
 #about .skills {
     height: 70%;
-    margin-top: 5%;
+    margin-bottom: 7%;
 }
 
 #about .skills i{
@@ -198,12 +197,10 @@ main .title p {
 }
 
 #projects .project-list{
-   width: 80%;
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
-    
-
+   height: 80%;
 }
 
 #projects .project-list .project-item{
@@ -211,7 +208,6 @@ main .title p {
     background-color: black;
     padding: 5%;
     margin: 5%;
-    height: 150px;
     display: flex;
     align-items: center;
 }
@@ -288,12 +284,11 @@ main .title p {
 #contact .btn{
     display: flex;
     align-items: center;
-/*     color: black; */
+    margin-top: 5%;
 }
 
 #contact .btn input{
     background-color: black;
-    color: black;
     height: 30%;
     width: 40%;
     color: rgba(0,213,21,255);
@@ -309,7 +304,7 @@ main .title p {
 footer {
     width: 100%;
     bottom: 0;
-    height: 60px;
+    height: 7%;
     position: fixed;
     background: rgb(0, 0, 0);
     display: flex;
@@ -381,7 +376,7 @@ body.mobile-menu-active a:hover{
 
 
 @media (min-width: 640px){
- 
+    /*nav*/
     nav #burger-menu-toggler {
         display:none;
     }
@@ -392,19 +387,133 @@ body.mobile-menu-active a:hover{
     nav #menu-desktop {
         display: flex;
     }  
-
+    
+    main .title  h1{
+        font-size: 4.2em;
+    }
+    /*home*/
     #home p {
         font-size: 1.5em;
     }
+    /*about*/
+    #about .body-page p.first {
+        font-size: 1.3em;
+    }
+
+    #about .body-page p.second {
+        font-size: 1.7em;
+        margin-bottom: 3%;
+    }
+    #about .skills {
+        height: 70%;
+
+    }
     
+    #about .skills i{
+        font-size: 4em;
+        margin: 3% 5%;
+        color: white;
+        text-shadow: 0 0 5px #64ff45;
+    }
+    /*projects*/
     
+    #projects .project-list .project-item{
+        font-size: 1.5em;
+    }
+
+    /*cv*/
+    #cv figure{
+        width: 70%;
+    }
+    /*contact*/
+
+    #contact .contact-links li{
+        font-size: 1.4em;
+    }    
+    #contact .field{
+        font-size: 1.6em;
+        padding: 2% 0;
+    }
+    #contact .field input {
+        font-size: 1em;
+        height: 40px;
+        padding: 3%;
+    }
+    #contact .btn{
+        margin-top: 2%;
+    }
+    #contact .btn input{
+        height: 20%;
+        width: 30%;
+        font-size: 1.5em;
+        }
+    /*footer*/
+    footer .icon {
+        font-size: 2em;   
+    }    
 }
      
 @media (min-width: 900px){
      
-  
-     
+    nav #menu-desktop {
+        font-size: 2.6em;
     }
+
+    /*HOME*/
+    #home {
+        justify-content: center;
+    }
+    #home .title h1 {
+        font-size: 8em;
+    }
+
+    #home .title p {
+        font-size: 2.3em;
+    }
+
+    #home img {
+        width: 70%;
+        height: auto;
+    }
+    /*about*/
+    #about .body-page p.first {
+        font-size: 1.6em;
+    }
+
+    #about .body-page p.second {
+        font-size: 2em;
+    }    
+    #about .skills i{
+        font-size: 5.5em;
+    }
+    /*contact*/
+
+    #contact .contact-links li{
+        font-size: 2em;
+    }    
+    #contact .field{
+        font-size: 2em;
+    }
+
+    #contact .field input {
+        font-size: 1em;
+        height: 40px;
+        padding: 3%;
+    }
+    #contact .btn{
+        margin-top: 2%;
+    }
+    #contact .btn input{
+        height: 18%;
+        width: 25%;
+        font-size: 1.5em;
+    }
+    /*footer*/
+    footer .icon {
+        font-size: 3em;   
+    }    
+
+}
      
 @media (min-width: 1800px){
      
