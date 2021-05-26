@@ -124,6 +124,7 @@ main .title  h1{
     display: inline-block;
     transform: scaleY(0.7);
     transform-Origin: 0 0;
+    
 }
 main .title p {
     font-size: 1.2em;
@@ -131,19 +132,19 @@ main .title p {
 
 /*HOME*/
 
-main #home .title h1 {
+#home .title h1 {
     font-size: 6em;
 }
-main #home {
+#home {
     justify-content:space-around;
 }
-figure {
+#home figure {
     display: flex;
     justify-content: center;
     max-height: 100%;
     max-width: 100%;
 }
-img {
+#home img {
     width: 60%;
     background-color: transparent;
 }
@@ -165,29 +166,68 @@ img {
     align-items: center;
 }
 
+#about .title{
+    text-shadow: 0 0 3px #8f8f8f;
+}
+
 #about .body-page p.first{
     font-size: 1em;
     margin-bottom: 5%;
 }
+
 #about .body-page p.second{
-    font-size: 1.3em;
-    margin-bottom: 3%;
+    font-size: 1.5em;
+    margin-bottom: 2%;
 }
 #about .skills {
     height: 70%;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 #about .skills i{
-    font-size: 5.5em;
-    margin: 2%;
+    font-size: 2.2em;
+    margin: 3% 5%;
+    color: white;
+    text-shadow: 0 0 5px #64ff45;
 }
 
 /*PROJECTS*/
 
+#projects .title{
+    text-shadow: 0 0 3px #000000;
+}
+
+#projects .project-list{
+   width: 80%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+    
+
+}
+
+#projects .project-list .project-item{
+    font-size: 1em;
+    background-color: black;
+    padding: 5%;
+    margin: 5%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+#projects .project-list .project-item a{
+    color: rgba(0,213,21,255);
+}
+
+
 /*CV*/
-main #cv figure img {
+#cv .title{
+    text-shadow: 0 0 3px #8f8f8f;
+}
+#cv figure img {
     width: 80%;
+    height: auto;
 }
 
 /*CONTACT*/
@@ -195,27 +235,21 @@ main #cv figure img {
 #contact {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly; 
+    justify-content: center; 
     align-items: center;
-
-/*     margin: 15% 0; */
 }
 
 #contact .title{
-    margin-bottom:1%;
+    text-shadow: 0 0 3px #000000;
 }
 
 #contact .body-page{
     text-align: left;
     width: 80%;
-/*     display: flex;
-    flex-direction: column;
-    justify-content: space-around; */
-   
 }
 
 #contact .contact-links li{
-/*     margin-bottom:3%; */
+    margin-bottom:2.5%;
     font-size: 1.1em;
     }
 
@@ -224,7 +258,6 @@ main #cv figure img {
     flex-direction: column;
     font-size: 1.3em;
     padding: 2% 0;
-
 }
 
 #contact .field input {
@@ -243,20 +276,29 @@ main #cv figure img {
 #contact .field textarea{
     padding: 3%;
     font-size: 1em;
+    background-color: black;
+    color: rgba(0,213,21,255);
+}
+
+#contact .field textarea::placeholder{
+    color: rgba(0,213,21,255);
+    opacity: 70%;
 }
 
 #contact .btn{
     display: flex;
     align-items: center;
+/*     color: black; */
 }
 
 #contact .btn input{
     background-color: black;
+    color: black;
     height: 30%;
     width: 40%;
     color: rgba(0,213,21,255);
     font-size: 1.5em;
-    border: 0.5px rgba(0,213,21,255) solid;
+    border: 0.5px solid rgba(0,213,21,255);
     border-radius: 15px;
 }
 
@@ -279,7 +321,6 @@ footer {
 footer .icon {
     color: rgba(0,213,21,255);
     font-size: 1.8em;   
-
 }
 
 
@@ -337,10 +378,10 @@ body.mobile-menu-active a:hover{
 
 /*BREAK POINTS*/
 
-/* Móviles: entre 320 y 480 píxeles.
-Tablets: entre 768 y 1024 píxeles.
-Pantallas grandes: más de 1200 píxeles. */
-@media (min-width: 650px) {
+
+
+@media (min-width: 640px){
+ 
     nav #burger-menu-toggler {
         display:none;
     }
@@ -350,10 +391,25 @@ Pantallas grandes: más de 1200 píxeles. */
 
     nav #menu-desktop {
         display: flex;
-    }
+    }  
 
+    #home p {
+        font-size: 1.5em;
+    }
+    
     
 }
+     
+@media (min-width: 900px){
+     
+  
+     
+    }
+     
+@media (min-width: 1800px){
+     
 
+     
+    }
 
 
