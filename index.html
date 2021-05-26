@@ -18,11 +18,12 @@
     <title>PORTFOLIO</title>
   </head>
   <body >
-    <nav>
+    <nav >
       <button id="burger-menu-toggler">
         <i class="fas fa-hamburger fa-3x " id="open-mobile-menu"></i>
         <i class="fas fa-times fa-3x" id="close-mobile-menu"></i>
       </button>
+
 
       <ul id="menu">
         <li class="menu-item active yellow-neon"><a href="#home">HOME</a></li>
@@ -31,8 +32,16 @@
         <li class="menu-item yellow-neon"><a href="#cv">CV</a></li>
         <li class="menu-item yellow-neon"><a href="#contact">CONTACT</a></li>
       </ul>
-    </nav>
+    
 
+      <ul id="menu-desktop">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT ME</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
     <main>
       <article class="page colorPage1" id="home">
         <section class="title">
@@ -51,11 +60,23 @@
       <article class="page colorPage2" id="about">
         <section class="title">
           <h1>ABOUT ME</h1>
-          <p>
+        </section>
+
+        <section class="body-page">
+          <p class="first">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
             maiores distinctio quod provident hic magni doloribus
           </p>
-        </section>
+          <p class="second">Some skills i've been learning... and still am!</p>
+          <div class="skills">            
+            <i class="fab fa-python"></i>
+            <i class="fab fa-js"></i>
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-github-alt"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-php"></i>
+          </div>
+        </section>  
       </article>
 
       <article class="page colorPage1" id="projects">

@@ -1,8 +1,11 @@
 1- hacer circulo verde
 
-2- se deforma la imagen
+2- que el home sea #home
 
-3- como hago para que el tamanio de page sea compactado entre nav y footer (si bajo la opacidad de nav veo que abarca atras de el)
+3- se ve re feo en mi celu
+4- cuando meto el media query, saco ese nav y pongo otro? display none para todo? o le saco la clase con js?
+
+4- dar relieve al boton
 
 
 esto al body
@@ -12,3 +15,5 @@ position: fixed;
 esto al main
     overflow: auto;
 y no' vimo' 
+
+
