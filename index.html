@@ -17,13 +17,12 @@
     <script src="./js/index.js"></script>
     <title>PORTFOLIO</title>
   </head>
-  <body >
-    <nav >
+  <body>
+    <nav>
       <button id="burger-menu-toggler">
-        <i class="fas fa-hamburger fa-3x " id="open-mobile-menu"></i>
+        <i class="fas fa-hamburger fa-3x" id="open-mobile-menu"></i>
         <i class="fas fa-times fa-3x" id="close-mobile-menu"></i>
       </button>
-
 
       <ul id="menu">
         <li class="menu-item active yellow-neon"><a href="#home">HOME</a></li>
@@ -32,22 +31,16 @@
         <li class="menu-item yellow-neon"><a href="#cv">CV</a></li>
         <li class="menu-item yellow-neon"><a href="#contact">CONTACT</a></li>
       </ul>
-    
-
-      <ul id="menu-desktop">
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#about">ABOUT ME</a></li>
-        <li><a href="#projects">PROJECTS</a></li>
-        <li><a href="#cv">CV</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
     </nav>
     <main>
       <article class="page colorPage1" id="home">
         <section class="title">
           <h1 class="white-neon">WELCOME</h1>
           <p>
-            Hi, i'm Male. bla bla bla bla bla Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cum non, eligendi, suscipit distinctio expedita necessitatibus maxime sit at reprehenderit voluptas libero ab accusantium in quidem magni impedit quo quaerat.
+            Hi, i'm Male. bla bla bla bla bla Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Ipsam cum non, eligendi, suscipit
+            distinctio expedita necessitatibus maxime sit at reprehenderit
+            voluptas libero ab accusantium in quidem magni impedit quo quaerat.
           </p>
         </section>
 
@@ -63,10 +56,13 @@
 
         <section class="body-page">
           <p class="first">
-            Some time ago I discovered I love to program, and since then I started studying everything that came my way on the subject. I'd love to work in a team and collaborate on projects with a social impact.
+            Some time ago I discovered I love to program, and since then I
+            started studying everything that came my way on the subject. I'd
+            love to work in a team and collaborate on projects with a social
+            impact.
           </p>
           <p class="second">Some skills I've been learning... and still am!</p>
-          <div class="skills">            
+          <div class="skills">
             <i class="fab fa-python"></i>
             <i class="fab fa-js"></i>
             <i class="fab fa-html5"></i>
@@ -83,11 +79,11 @@
             <i class="fas fa-paw"></i>
             <i class="fas fa-camera-retro"></i>
           </div>
-        </section>  
+        </section>
       </article>
 
       <article class="page colorPage1" id="projects">
-        <section class="title" >
+        <section class="title">
           <h1>PROJECTS</h1>
         </section>
 
@@ -104,7 +100,7 @@
           <h1>CV</h1>
         </section>
         <figure>
-          <img src="./img/cv.png" alt="cv">
+          <img src="./img/cv.png" alt="cv" />
         </figure>
       </article>
 
@@ -115,58 +111,70 @@
 
         <section class="body-page">
           <ul class="contact-links">
-            <li><i class="fas fa-envelope-square icon"></i>  malena.vero0@gmail.com</li>
-            <li><i class="fab fa-linkedin icon"></i>  /malena-vero</li>
+            <li>
+              <i class="fas fa-envelope-square icon"></i> malena.vero0@gmail.com
+            </li>
+            <li><i class="fab fa-linkedin icon"></i> /malena-vero</li>
           </ul>
           <form>
             <fieldset>
-<!--               <legend>Contact</legend> -->
+              <!--               <legend>Contact</legend> -->
               <p class="field">
                 <label for="name">Name:</label>
-                <input 
+                <input
                   type="text"
                   id="name"
+                  name="name"
                   placeholder="What should i call you?"
-                  required>
+                  required
+                />
               </p>
               <p class="field">
                 <label for="pronouns">Pronouns:</label>
                 <input
                   type="text"
                   id="pronouns"
-                  placeholder="He/She/They/Others">
+                  name="pronouns"
+                  placeholder="He/She/They/Others"
+                />
               </p>
               <p class="field">
                 <label for="email">E-Mail:</label>
                 <input
                   type="email"
                   id="email"
+                  name="email"
                   placeholder="example@mail.com"
-                  required>
+                  required
+                />
               </p>
               <p class="field">
                 <label for="message">Message: </label>
                 <textarea
-                name="message"
-                id="message"
-                placeholder="..."
-                cols="30"
-                rows="3"
-                ></textarea> 
+                  name="message"
+                  id="message"
+                  name="message"
+                  placeholder="..."
+                  cols="30"
+                  rows="3"
+                ></textarea>
               </p>
               <p class="field btn">
-                <input type="submit" value="Send">
-              </p>              
-              
+                <input type="submit" value="Send" name="submit" />
+              </p>
             </fieldset>
           </form>
-        </section>  
+        </section>
       </article>
     </main>
 
     <footer>
-      <a href="https://www.linkedin.com/in/malena-vero/"><i class="fab fa-linkedin icon"></i></a>
-      <a href="https://www.github.com/malenavero"><i class="fab fa-github-square icon"></i></a>
+      <a href="https://www.linkedin.com/in/malena-vero/"
+        target="_blank"><i class="fab fa-linkedin icon"></i
+      ></a>
+      <a href="https://www.github.com/malenavero" target="_blank"
+        ><i class="fab fa-github-square icon"></i
+      ></a>
     </footer>
   </body>
 </html>
