@@ -9,7 +9,7 @@
     text-decoration: none;
     border: none;
     outline: none;
-    font-family: 'VT323', monospace;    
+    font-family: 'VT323', monospace;
 }
 
 /*colores*/
@@ -20,7 +20,7 @@
 
 .white-neon {
     color: rgb(21, 250, 0);
-    text-shadow: 0 0 8px #ffffff, 0 0 2px #ffffff, 0 0 10px #ffffff, 0 0 6px #ffffff, 0 0 20px ;
+    text-shadow: 0 0 8px #ffffff, 0 0 2px #ffffff, 0 0 10px #ffffff, 0 0 6px #ffffff, 0 0 20px;
 }
 
 /*CON MENU CERRADO*/
@@ -36,10 +36,10 @@ body {
 
 /*NAV*/
 /*MOBILE*/
-nav{
+nav {
     position: fixed;
     display: flex;
-    justify-content: flex-end;    
+    justify-content: flex-end;
     align-items: center;
     height: 80px;
     width: 100%;
@@ -48,12 +48,12 @@ nav{
     top: 0;
 }
 
-nav #burger-menu-toggler{
+nav #burger-menu-toggler {
     background-color: transparent;
-    color: rgba(0,213,21,255);
-    margin-right: 10%; 
-    font-size: 0.8em;  
-    z-index: 2; 
+    color: rgba(0, 213, 21, 255);
+    margin-right: 10%;
+    font-size: 0.8em;
+    z-index: 2;
 }
 
 nav #close-mobile-menu {
@@ -72,56 +72,62 @@ main {
     height: 100vh;
 }
 
-main .page{
+main .page {
     height: 100vh;
     width: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center; 
+    align-items: center;
     padding-top: 80px;
-    padding-bottom: 60px; 
- 
+    padding-bottom: 60px;
+
 }
-/* main .colorPage1{
-    background-color: rgb(226, 226, 226);
-} */
+
 main .colorPage2 {
-    background-color: rgb(0, 0, 0) ;
+    background-color: rgb(0, 0, 0);
 }
+
 main .title {
-    color: rgba(0,213,21,255);
-    padding: 0 10%;;
-    
+    color: rgba(0, 213, 21, 255);
+    padding: 0 10%;
+    width: 100%;
+
 }
-main .title  h1{     
-    
-    font-size: 3em;
+
+main .title h1 {
+
+    font-size: 6em;
     letter-spacing: 2px;
     display: inline-block;
     transform: scaleY(0.7);
     transform-Origin: 0 0;
-    
 }
+
 main .title p {
     font-size: 1.2em;
 }
 
+main .title h2 {
+    font-size: 3em;
+}
+
+
+
 /*HOME*/
 
-#home .title h1 {
-    font-size: 6em;
-}
 #home {
-    justify-content:space-around;
+    justify-content: space-around;
 }
+
 #home figure {
     display: flex;
     justify-content: center;
     max-height: 100%;
     max-width: 100%;
 }
+
 #home img {
     width: 60%;
     background-color: transparent;
@@ -131,12 +137,12 @@ main .title p {
 #about {
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
 }
 
-#about .body-page{
-    color: rgba(0,213,21,255);
+#about .body-page {
+    color: rgba(0, 213, 21, 255);
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -144,25 +150,26 @@ main .title p {
     align-items: center;
 }
 
-#about .title{
+#about .title {
     text-shadow: 0 0 3px #8f8f8f;
 }
 
-#about .body-page p.first{
+#about .body-page p.first {
     font-size: 1em;
     margin-bottom: 5%;
 }
 
-#about .body-page p.second{
+#about .body-page p.second {
     font-size: 1.5em;
     margin-bottom: 2%;
 }
+
 #about .skills {
     height: 70%;
     margin-bottom: 7%;
 }
 
-#about .skills i{
+#about .skills i {
     font-size: 2.2em;
     margin: 3% 5%;
     color: white;
@@ -171,18 +178,18 @@ main .title p {
 
 /*PROJECTS*/
 
-#projects .title{
+#projects .title {
     text-shadow: 0 0 3px #000000;
 }
 
-#projects .project-list{
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   height: 80%;
+#projects .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 80%;
 }
 
-#projects .project-list .project-item{
+#projects .project-list .project-item {
     font-size: 1em;
     background-color: black;
     padding: 5%;
@@ -191,92 +198,82 @@ main .title p {
     align-items: center;
 }
 
-#projects .project-list .project-item a{
-    color: rgba(0,213,21,255);
+#projects .project-list .project-item a {
+    color: rgba(0, 213, 21, 255);
 }
 
 
-/*CV*/
-#cv .title{
-    text-shadow: 0 0 3px #8f8f8f;
-}
-#cv figure img {
-    width: 80%;
-    height: auto;
-}
 
 /*CONTACT*/
 
 #contact {
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
 }
 
-#contact .title{
+#contact .title {
     text-shadow: 0 0 3px #000000;
+    margin-bottom: 35px;
 }
 
-#contact .body-page{
+#contact .body-page {
     text-align: left;
     width: 80%;
 }
 
-#contact .contact-links li{
-    margin-bottom:2.5%;
-    font-size: 1.1em;
-    }
+#contact .contact-links li {
+    margin-bottom: 2px;
+}
 
-#contact .field{
+#contact .field {
     display: flex;
     flex-direction: column;
     font-size: 1.3em;
-    padding: 2% 0;
+    padding: 5px 0;
 }
 
 #contact .field input {
-    font-size: 0.8em;
-    height: 30px;
-    padding: 2%;
+    font-size: 1em;
+    padding: 5px;
     background-color: black;
-    color: rgba(0,213,21,255);
+    color: rgba(0, 213, 21, 255);
 }
 
-#contact .field input::placeholder{
-    color: rgba(0,213,21,255);
+#contact .field input::placeholder {
+    color: rgba(0, 213, 21, 255);
     opacity: 70%;
 }
 
-#contact .field textarea{
+#contact .field textarea {
     padding: 3%;
     font-size: 1em;
     background-color: black;
-    color: rgba(0,213,21,255);
+    color: rgba(0, 213, 21, 255);
 }
 
-#contact .field textarea::placeholder{
-    color: rgba(0,213,21,255);
+#contact .field textarea::placeholder {
+    color: rgba(0, 213, 21, 255);
     opacity: 70%;
 }
 
-#contact .btn{
+#contact .btn {
     display: flex;
     align-items: center;
-    margin-top: 5%;  
-   
 }
 
-#contact .btn input{
+#contact .btn input {
     background-color: black;
     height: 30%;
     width: 40%;
-    color: rgba(0,213,21,255);
+    color: rgba(0, 213, 21, 255);
     font-size: 1.5em;
-    border: 0.5px solid rgba(0,213,21,255);
+    border: 0.5px solid rgba(0, 213, 21, 255);
     border-radius: 15px;
-    box-shadow: 3px 3px 5px rgba(0,213,21,255);
-    cursor: pointer; /*quiero ponerle personalizado pero no sale*/
+    box-shadow: 3px 3px 5px rgba(0, 213, 21, 255);
+    cursor: pointer;
+    /*quiero ponerle personalizado pero no sale*/
 }
 
 
@@ -293,11 +290,11 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     z-index: 3;
-    }
+}
 
 footer .icon {
-    color: rgba(0,213,21,255);
-    font-size: 1.8em;   
+    color: rgba(0, 213, 21, 255);
+    font-size: 1.8em;
 }
 
 /*MENU MOBILE ACTIVATE*/
@@ -310,18 +307,18 @@ body.mobile-menu-active {
 }
 
 body.mobile-menu-active main {
-   opacity: 25%;   
+    opacity: 25%;
 }
 
-body.mobile-menu-active #close-mobile-menu{
+body.mobile-menu-active #close-mobile-menu {
     display: block;
 }
 
-body.mobile-menu-active  #open-mobile-menu{
+body.mobile-menu-active #open-mobile-menu {
     display: none;
 }
 
-body.mobile-menu-active #menu {       
+body.mobile-menu-active #menu {
     position: absolute;
     width: 100vw;
     height: 100vh;
@@ -331,7 +328,7 @@ body.mobile-menu-active #menu {
     padding: 20%;
     top: 0;
     left: 0;
-    z-index: 1;    
+    z-index: 1;
 }
 
 
@@ -340,14 +337,14 @@ body.mobile-menu-active nav li {
     text-align: center;
     font-size: 2.3em;
     padding: 4%;
-    margin: 2% 3%;    
+    margin: 2% 3%;
 }
 
 body.mobile-menu-active a {
     color: white;
 }
 
-body.mobile-menu-active a:hover{
+body.mobile-menu-active a:hover {
     font-size: 1.2em;
 
 }
@@ -356,7 +353,8 @@ body.mobile-menu-active a:hover{
 
 
 
-@media (min-width: 640px){
+@media (min-width: 640px) {
+
     /*nav*/
     nav #menu {
         display: none;
@@ -364,33 +362,37 @@ body.mobile-menu-active a:hover{
         font-size: 2em;
         width: 100%;
     }
-    
-    nav #menu li a{
+
+    nav #menu li a {
         color: white;
         text-shadow: 0 0 8px #ffffff, 0 0 2px #ffffff;
     }
-    
-    nav #menu li a:hover{
+
+    nav #menu li a:hover {
         text-shadow: 0 0 8px #70ff4c, 0 0 2px #51fb51;
     }
+
     nav #burger-menu-toggler {
-        display:none;
+        display: none;
     }
 
     nav #menu {
         display: flex;
-    }  
-    
-    main .title  h1{
+    }
+
+    main .title h1 {
         font-size: 4.2em;
     }
+
     /*home*/
     #home {
         justify-content: center;
     }
+
     #home p {
         font-size: 1.7em;
     }
+
     /*about*/
     #about .body-page p.first {
         font-size: 1.3em;
@@ -400,31 +402,31 @@ body.mobile-menu-active a:hover{
         font-size: 1.7em;
         margin-bottom: 3%;
     }
+
     #about .skills {
         height: 70%;
 
     }
-    
-    #about .skills i{
+
+    #about .skills i {
         font-size: 4em;
         margin: 3% 5%;
         color: white;
         text-shadow: 0 0 5px #64ff45;
     }
+
     /*projects*/
-    
-    #projects .project-list .project-item{
+
+    #projects .project-list .project-item {
         font-size: 1.5em;
     }
 
-    /*cv*/
-    #cv figure{
-        width: 70%;
-    }
+
     /*contact*/
 
-    #contact .contact-links li{
+    /*     #contact .contact-links li{
         font-size: 1.4em;
+
     }    
     #contact .field{
         font-size: 1.6em;
@@ -442,15 +444,15 @@ body.mobile-menu-active a:hover{
         height: 20%;
         width: 30%;
         font-size: 1.5em;
-        }
+        } */
     /*footer*/
     footer .icon {
-        font-size: 2em;   
-    }    
+        font-size: 2em;
+    }
 }
-     
-@media (min-width: 900px) and (max-width: 1400px){
-     
+
+@media (min-width: 900px) and (max-width: 1400px) {
+
     nav #menu {
         font-size: 2.6em;
     }
@@ -459,6 +461,7 @@ body.mobile-menu-active a:hover{
     #home {
         justify-content: center;
     }
+
     #home .title h1 {
         font-size: 8em;
     }
@@ -471,6 +474,7 @@ body.mobile-menu-active a:hover{
         width: 70%;
         height: auto;
     }
+
     /*about*/
     #about .body-page p.first {
         font-size: 1.6em;
@@ -478,18 +482,20 @@ body.mobile-menu-active a:hover{
 
     #about .body-page p.second {
         font-size: 2em;
-    }    
-    #about .skills i{
+    }
+
+    #about .skills i {
         font-size: 5.5em;
     }
 
- 
+
     /*contact*/
 
-    #contact .contact-links li{
+/*     #contact .contact-links li {
         font-size: 2em;
-    }    
-    #contact .field{
+    }
+
+    #contact .field {
         font-size: 2em;
     }
 
@@ -498,33 +504,26 @@ body.mobile-menu-active a:hover{
         height: 40px;
         padding: 3%;
     }
-    #contact .btn{
+
+    #contact .btn {
         margin-top: 2%;
     }
-    #contact .btn input{
+
+    #contact .btn input {
         height: 18%;
         width: 25%;
         font-size: 1.5em;
-    }
+    } */
+
     /*footer*/
     footer .icon {
-        font-size: 3em;   
-    }    
-
-}
-     
-@media (min-width: 1600px){
-   /*cv*/
-
-
-   #cv figure img {
-    width: 40%;
-}
-     
+        font-size: 3em;
     }
 
+}
 
 
-    /*cursos point shadow al botton y arreglar el 
 
 
+
+/*cursos point shadow al botton y arreglar el 

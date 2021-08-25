@@ -1,0 +1,12 @@
+- ordenar todo ah
+
+* solo un h1 ✓
+* section about Me 
+* form --> atributos name ✓
+* En mobile se puede scrollear lateralmente. main .title debería tener: width: 100%; para solucionar esto. ✓
+
+* unificar los 2 menus y manejar solo con css ✓
+
+
+
+
